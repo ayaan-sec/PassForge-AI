@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassForge AI - Password Strength Checker</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>🔐 PassForge AI</h1>
+            <p class="subtitle">AI-Powered Password Strength Analyzer</p>
+            
+            <div class="input-group">
+                <input type="password" id="passwordInput" placeholder="Enter your password" autocomplete="off">
+                <button id="togglePassword" class="btn-toggle">👁️</button>
+            </div>
+            
+            <button id="analyzeBtn" class="btn-primary">Analyze Password</button>
+            
+            <div id="results" class="results hidden">
+                <div class="result-item">
+                    <h3>Strength Score</h3>
+                    <div class="strength-bar">
+                        <div id="strengthFill" class="strength-fill"></div>
+                    </div>
+                    <p id="strengthScore">-</p>
+                    <p id="strengthLevel" class="strength-level">-</p>
+                </div>
+                
+                <div class="result-item">
+                    <h3>Breach Count</h3>
+                    <p id="breachCount" class="breach-count">-</p>
+                    <p id="breachStatus" class="breach-status">-</p>
+                </div>
+                
+                <div class="result-item">
+                    <h3>Password Details</h3>
+                    <p>Length: <span id="passwordLength">-</span> characters</p>
+                </div>
+                
+                <div class="result-item">
+                    <h3>📋 Feedback</h3>
+                    <ul id="feedbackList"></ul>
+                </div>
+                
+                <div class="result-item">
+                    <h3>💡 Recommendations</h3>
+                    <ul id="recommendationsList"></ul>
+                </div>
+            </div>
+            
+            <p class="privacy-notice">✅ 100% Offline • No data stored • Your privacy protected</p>
+        </div>
+    </div>
+    
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
